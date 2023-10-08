@@ -1,0 +1,128 @@
+% Metódy inžinierskej práce
+
+\documentclass[10pt,twoside,slovak,a4paper]{article}
+
+\usepackage[slovak]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage[IL2]{fontenc} % lepšia sadzba písmena Ľ než v T1
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{url} % príkaz \url na formátovanie URL
+\usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
+
+\usepackage{cite}
+%\usepackage{times}
+
+\pagestyle{headings}
+
+\title{ How Email Search is Different and Why it Matters\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2023/24, vedenie: Vladimír Mlynarovič}} % meno a priezvisko vyučujúceho na cvičeniach
+
+\author{Ivana Števulová\\[2pt]
+	{\small Slovenská technická univerzita v Bratislave}\\
+	{\small Fakulta informatiky a informačných technológií}\\
+	{\small \texttt{xstevulovai@stuba.sk}}
+	}
+
+\date{\small 5. november 2023}% upravte
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+Web search is used to find information, buy or sell things, plan and monitor various events, understand different topics, etc. It is used on daily basis. A great attention was put into a web search while other domains has not received the proper amount of recognition. Email has become a large repository of our personal data. In comparison with web search, search intentions differ in email. People know a lot about what they are looking for, the content being sought is personal and private. In addition, metadata such as who sent it and when it was sent is crucial. Email stores and secures our personal data. This article contains explanation on what is email search based on and why it matters. 
+
+
+\section{Úvod}
+
+The goal of this article is to understand why email search is important and in what way it differs from web search.
+
+As it is already mentioned above, web search and email search are quite different. In this section we discuss the main differences between web and email search ~\ref{web vs email}.
+Another important aspects can be found in ~\ref{dolezita} a~\ref{dolezitejsia}.
+The conclution is located in ~\ref{zaver} paragraph.
+The source can be found here: \cite{DBLP:conf/wsdm/Dumais21}.
+
+
+
+\section{Web search versus Email search} \label{web vs email}
+
+Z obr.~\ref{f:rozhod} 
+Email was initially designed to facilitate asynchronous communication, it has also become a large repository of personal information. The volume of email continues to grow in both consumer and enterprise settings, and search plays a key role in getting back to needed information. Email search is, however, very different than Web search on many dimensions -- the content being sought is personal and private, metadata such as who sent it or when it was sent is plentiful and important, search intentions are different, people know a lot about what they are looking for, etc. Given these differences, new approaches are required.
+
+%\begin{figure*}[tbh]
+%\centering
+%\includegraphics[scale=0.2]{th.jpg}
+
+%\caption{Rozhodujúci argument.}
+%\label{f:rozhod}
+%\end{figure*}
+
+
+
+\section{Iná časť} \label{ina}
+
+Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+
+Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+
+
+\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+
+Niekedy treba uviesť zoznam:
+
+\begin{itemize}
+\item jedna vec
+\item druhá vec
+	\begin{itemize}
+	\item x
+	\item y
+	\end{itemize}
+\end{itemize}
+
+Ten istý zoznam, len číslovaný:
+
+\begin{enumerate}
+\item jedna vec
+\item druhá vec
+	\begin{enumerate}
+	\item x
+	\item y
+	\end{enumerate}
+\end{enumerate}
+
+
+\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
+
+\paragraph{Veľmi dôležitá poznámka.}
+Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
+
+
+
+\section{Dôležitá časť} \label{dolezita}
+
+
+
+
+\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+
+
+
+
+\section{Záver} \label{zaver} % prípadne iný variant názvu
+
+
+
+%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
+
+
+% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
+\bibliography{literatura}
+https://dl.acm.org/doi/10.1145/3437963.3441653
+
+\end{document}
