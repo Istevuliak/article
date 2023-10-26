@@ -9,7 +9,7 @@
 \usepackage{graphicx}
 \usepackage{url} % príkaz \url na formátovanie URL
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
-
+\usepackage{subcaption}
 \usepackage{cite}
 %\usepackage{times}
 
@@ -43,16 +43,15 @@ Web search is used to find information, buy or sell things, plan and monitor var
 The goal of this article is to understand why email search is important and in what way it differs from web search.
 
 As it is already mentioned above, web search and email search are quite different. In this section we discuss the main differences between web and email search ~\ref{web vs email}.
-Another important aspects can be found in ~\ref{dolezita} a~\ref{dolezitejsia}.
+Another important aspects can be found in ~\ref{comparison} a~\ref{dolezitejsia}.
 The conclution is located in ~\ref{zaver} paragraph.
 The source can be found here: \cite{DBLP:conf/wsdm/Dumais21}.
 
 
 
-\section{Web search versus Email search} \label{web vs email}
+%\section{Web search versus Email search} \label{web vs email}
 
-Z obr.~\ref{f:rozhod} 
-Email was initially designed to facilitate asynchronous communication, it has also become a large repository of personal information. The volume of email continues to grow in both consumer and enterprise settings, and search plays a key role in getting back to needed information. Email search is, however, very different than Web search on many dimensions -- the content being sought is personal and private, metadata such as who sent it or when it was sent is plentiful and important, search intentions are different, people know a lot about what they are looking for, etc. Given these differences, new approaches are required.
+%Z obr.~\ref{f:rozhod} 
 
 %\begin{figure*}[tbh]
 %\centering
@@ -64,36 +63,44 @@ Email was initially designed to facilitate asynchronous communication, it has al
 
 
 
-\section{Iná časť} \label{ina}
+\section{Social networks} \label{web vs email}
+Email was initially designed to facilitate asynchronous communication, it has also become a large repository of personal information. The volume of email continues to grow in both consumer and enterprise settings, and search plays a key role in getting back to needed information. Social Network Analysis (SNA) extract social network information at the personal and at the organisational level utilizing various techniques including clustering, centrality measures, shortest path algorithms, and more.
 
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
+\begin{figure*}[h!]
+	\centering
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width =\linewidth]{mail.jpg}
+		\caption{Mail}
+	\end{subfigure}
+	\space                                                
+	\begin{subfigure}[b]{0.3\linewidth}
+		\includegraphics[width=\linewidth]{internet.jpeg}
+		\caption{Internet}
+	\end{subfigure}
+	\label{fig:web}
 
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
+\end{figure*}
+SNA is usually conducted using one of two approaches: Egocentric\footnote{Personal} or sociocentric\footnote{Global} ~\ref{vysvetlenie}.  Having more and more valuable public sources for social network information presents more opportunities to collect social network information that are less sensitive privacy-wise. 
+
+%Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:difference}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať %aj poznámku pod čiarou.}
+
+%Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na %všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
 
 
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
+\subsection{What are egocentric and sociocentric networks} \label{vysvetlenie}
+While sociocentric network analysis focuses on all relationships among the members of a certain group from a global viewpoint, egocentric network analysis primarly considers the personal network of a root individual, sometimes called as ego. 
 
-Niekedy treba uviesť zoznam:
-
-\begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
-\end{itemize}
 
 Ten istý zoznam, len číslovaný:
 
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
+%\begin{enumerate}
+%\item jedna vec
+%\item druhá vec
+%	\begin{enumerate}
+%	\item x
+%	\item y
+%	\end{enumerate}
+%\end{enumerate}
 
 
 \subsection{Ešte nejaké vysvetlenie} \label{ina:este}
@@ -103,12 +110,36 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 
 
 
-\section{Dôležitá časť} \label{dolezita}
+\section{Email} \label{comparison}
+Email has become one of the most widely used ways of written communication over the internet, which has resulted in the increase of traffic with the advent (submerging) of World Wide Web. The increase also means more emails with illegitimate purposes, for instance, phishing, spamming, cyber bullying, threatening etc. Due to this, there is a need for e-mail mining. ~\ref{email mining}. Electronic mail, in other words email, is a method of exchanging digital messages between the authors (senders) and recipients. 
+
+The first email sent across the network was sent by Ray Tomlinson, initiated the 
+\begin{itemize}
+\item Date: Time and date stating when the email was written
+\item Message ID: Automatically generated, useful for prevention of multiple deliveries and for reference in In-Reply-To
+\item In-Reply-To: This only relates to reply messages. It is used to link related email together. 
+\item To: This include the recipient/s email address/es or optionally names. 
+\item Bcc: Stands for Blind Carbon Copy. Adresses added to the SMTP (Simple Mail Transfer Protocol) list for delivery but not listed in the message data are invisible to other recipients. 
+\item Cc: Carbon copy. Adresses added to the delivery list are visible for all recipients. 
+\item Subject: A brief peak on the content of message
+\item Content-Type: Information about how the message is going to be displayed
+\item Precedence: Features such as 'bulk', 'list', 'junk' are common
+\item Received: Tracking information is being generated by mail servers that have already handled a message 
+\item References: 
+\item Reply-To:
+\item Sender:
+\item Archived-At:
+	\begin{itemize}
+	\item x
+	\item y
+	\end{itemize}
+\end{itemize}
 
 
 
 
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+
+\subsection{Email mining} \label{email mining}
 
 
 
@@ -124,5 +155,8 @@ Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \bibliography{literatura}
 https://dl.acm.org/doi/10.1145/3437963.3441653
+
+https://citeseerx.ist.psu.edu/pdf/517aab5b3a7b1e207c44ff05b9ae47620ce181e7
+
 
 \end{document}
