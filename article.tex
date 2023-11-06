@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[10pt,twoside,english,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -35,36 +35,18 @@
 
 \end{abstract}
 
-Web search is used to find information, buy or sell things, plan and monitor various events, understand different topics, etc. It is used on daily basis. A great attention was put into a web search while other domains has not received the proper amount of recognition. Email has become a large repository of our personal data. In comparison with web search, search intentions differ in email. People know a lot about what they are looking for, the content being sought is personal and private. In addition, metadata such as who sent it and when it was sent is crucial. Email stores and secures our personal data. This article contains explanation on what is email search based on and why it matters. 
+Web search is used to find information, buy or sell things, plan and monitor various events, understand different topics, etc. It is used on daily basis. A great attention was put into a web search while other domains has not received the proper amount of recognition. Email has become a large repository of our personal data. In comparison with web search, search intentions differ in email. People know a lot about what they are looking for, the content being sought is personal and private. In addition, metadata such as who sent it and when it was sent is crucial. Email stores and secures our personal data. This article contains explanation on what is email search based on and why it matters. The goal of this article is to understand why email search is important and in what way it differs from web search.
 
 
-\section{Úvod}
+\section{Introduction}
 
-The goal of this article is to understand why email search is important and in what way it differs from web search.
-
-As it is already mentioned above, web search and email search are quite different. In this section we discuss the main differences between web and email search ~\ref{web vs email}.
-Another important aspects can be found in ~\ref{comparison} a~\ref{dolezitejsia}.
+	As it is already mentioned above, web search and email search are quite different. The section ~\ref{email} discusses what email is in general, egocentric and sociocentric terms are discribed in ~\ref{vysvetlenie} and which parts are important  ~\ref{comparison}. In section ~\ref{search tools} readers can find explanation on how search engines work.
 The conclution is located in ~\ref{zaver} paragraph.
-The source can be found here: \cite{DBLP:conf/wsdm/Dumais21}.
+More details can be found: \cite{source}.
 
 
-
-%\section{Web search versus Email search} \label{web vs email}
-
-%Z obr.~\ref{f:rozhod} 
-
-%\begin{figure*}[tbh]
-%\centering
-%\includegraphics[scale=0.2]{th.jpg}
-
-%\caption{Rozhodujúci argument.}
-%\label{f:rozhod}
-%\end{figure*}
-
-
-
-\section{Social networks} \label{web vs email}
-Email was initially designed to facilitate asynchronous communication, it has also become a large repository of personal information. The volume of email continues to grow in both consumer and enterprise settings, and search plays a key role in getting back to needed information. Social Network Analysis (SNA) extract social network information at the personal and at the organisational level utilizing various techniques including clustering, centrality measures, shortest path algorithms, and more.
+\section{Email} \label{email}
+As email was initially designed to facilitate asynchronous communication, it has also become a large repository of personal information. The volume of email continues to grow in both consumer and enterprise settings, and search plays a key role in getting back to needed information. Social Network Analysis (SNA) extract social network information at the personal and at the organisational level utilizing various techniques including clustering, centrality measures, shortest path algorithms, and more.
 
 \begin{figure*}[h!]
 	\centering
@@ -80,7 +62,7 @@ Email was initially designed to facilitate asynchronous communication, it has al
 	\label{fig:web}
 
 \end{figure*}
-SNA is usually conducted using one of two approaches: Egocentric\footnote{Personal} or sociocentric\footnote{Global} ~\ref{vysvetlenie}.  Having more and more valuable public sources for social network information presents more opportunities to collect social network information that are less sensitive privacy-wise. 
+SNA is usually conducted using one of two approaches: Egocentric\footnote{Egocentric - Personal} or sociocentric\footnote{Sociocentric - Global}.  Having more and more valuable public sources for social network information presents more opportunities to collect social network information that are less sensitive privacy-wise. More described in:\cite{IdoGuyPublicvsPrivate}.
 
 %Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:difference}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať %aj poznámku pod čiarou.}
 
@@ -89,62 +71,94 @@ SNA is usually conducted using one of two approaches: Egocentric\footnote{Person
 
 \subsection{What are egocentric and sociocentric networks} \label{vysvetlenie}
 While sociocentric network analysis focuses on all relationships among the members of a certain group from a global viewpoint, egocentric network analysis primarly considers the personal network of a root individual, sometimes called as ego. 
+For more details visit: \cite{IdoGuyPublicvsPrivate}.
 
 
-Ten istý zoznam, len číslovaný:
+\subsection{Email structure} \label{comparison}
+Email has become one of the most widely used ways of written communication over the internet, which has resulted in the increase of traffic with the advent (submerging) of World Wide Web. The increase also means more emails with illegitimate purposes, for instance, phishing, spamming, cyber bullying, threatening etc. Due to this, there is a need for e-mail mining. ~\ref{mining}. Electronic mail, in other words email, is a method of exchanging digital messages between the authors (senders) and recipients. 
 
-%\begin{enumerate}
-%\item jedna vec
-%\item druhá vec
-%	\begin{enumerate}
-%	\item x
-%	\item y
-%	\end{enumerate}
-%\end{enumerate}
-
-
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-
-
-
-\section{Email} \label{comparison}
-Email has become one of the most widely used ways of written communication over the internet, which has resulted in the increase of traffic with the advent (submerging) of World Wide Web. The increase also means more emails with illegitimate purposes, for instance, phishing, spamming, cyber bullying, threatening etc. Due to this, there is a need for e-mail mining. ~\ref{email mining}. Electronic mail, in other words email, is a method of exchanging digital messages between the authors (senders) and recipients. 
-
+\cite{emailmining} 
 The first email sent across the network was sent by Ray Tomlinson, initiated the 
 \begin{itemize}
-\item Date: Time and date stating when the email was written
-\item Message ID: Automatically generated, useful for prevention of multiple deliveries and for reference in In-Reply-To
-\item In-Reply-To: This only relates to reply messages. It is used to link related email together. 
-\item To: This include the recipient/s email address/es or optionally names. 
-\item Bcc: Stands for Blind Carbon Copy. Adresses added to the SMTP (Simple Mail Transfer Protocol) list for delivery but not listed in the message data are invisible to other recipients. 
-\item Cc: Carbon copy. Adresses added to the delivery list are visible for all recipients. 
-\item Subject: A brief peak on the content of message
-\item Content-Type: Information about how the message is going to be displayed
+\item Date: The local time and date when the message was
+written
+\item Message-ID: Also an automatically generated field; used
+to prevent multiple deliveries and for reference in In-Reply-
+To: (see below).
+\item  In-Reply-To: Message-ID of the message which is a reply
+to. It is used to link related messages together. This field
+only applies for reply messages.
+Along with above header fields some common header fields
+of email which every person is using are:
+
+\item To: The email addresses, and optionally name(s) of the
+message's recipient(s). Indicates primary recipients
+(multiple allowed), for secondary recipients see Cc: and
+Bcc: below.
+\item Bcc: Blind Carbon Copy; addresses added to the SMTP
+delivery list but not (usually) listed in the message data,
+remaining invisible to other recipients.
+\item Cc: Carbon copy; many email clients will mark email in
+your inbox differently depending on whether you are in the
+To: or Cc: list
+\item Subject: A brief summary of the topic of the message.
+Certain abbreviations are commonly used in the subject,
+including "RE:" and "FW:"
+\item Content-Type: Information about how the message is to
+be displayed, usually a MIME type.
 \item Precedence: Features such as 'bulk', 'list', 'junk' are common
-\item Received: Tracking information is being generated by mail servers that have already handled a message 
-\item References: 
-\item Reply-To:
-\item Sender:
-\item Archived-At:
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
+\item Received: Tracking information generated by mail
+servers that have previously handled a message, in reverse
+order (last handler first).
+\item References: Message-ID of the message that this is a
+reply to, and the message-id of the message the previous
+reply were a reply to, etc.
+\item Reply-To: Address that should be used to reply to the
+message.
+\item Sender: Address of the actual sender acting on behalf of
+the author listed in the From: field.
+\item Archived-At: A direct link to the archived form of an
+individual email message
+
 \end{itemize}
 
+\subsection{Email mining} \label{mining}
+Email mining involves the extraction of data obtained from the email message's header and body. Numerous text mining methods that extract unfamiliar and useful information from large set of emails can be used to achieve email mining. Email mining can be explained as an application of the upcoming research area of Text Mining (TM or also recognized as Knowledge Discovery from Textual Data) on email data.
+However, specific characteristics of email data exist, which set/give a distinctive separating line between Email and Text minig:
+
+\begin{enumerate}
+\item Email includes additional information on the headers of email that can be exploited for various email mining tasks
+\item Text in email is significantly shorter and, therefore, some Text Mining techniques might be inefficient in email data.
+\item Email is often cursorily written and, thus, linguistic well-formedness is not guaranteed. Spelling and grammar mistakes as well as nonstandard user acronyms also appear
+frequently.
+\item Email is personal and therefore generic techniques are difficult to be effective to individuals.
+\item Email is a data stream targeted to a particular user and concepts or distributions of target classes of the messages may change over time, with respect to the messages received by that user.
+\item Email will probably have noise. HTML tags and attachments must be removed in order to apply a text mining technique. In some other cases, noise is intensively inserted. In spam filtering for example, noisy words and phrases are inserted, in order to mislead machine learning algorithms.
+\item It is rather difficult to have public email data for experiments, due to privacy issues. This is a drawback especially for research since comparative studies cannot be conducted without public available datasets. An exception to the above statement is the Enron Corpus (Klimt and Yang, 2004), which was made public after a legal investigation concerning the Enron Corporation
+\end{enumerate}
+
+
+\subsection{Email protocols} \label{protocols}
+\cite{protocols}
+
+
+\section{Search Tools} \label{search tools}
+Search tools can be grouped into two fundamental types: directories and search engines. The main distinction among search engines and directories is that a directory is built and worked by individuals, whereas the web search engines database is made by software known as spiders or robots. Searching, rather than browsing, is the main element of search engines. Search engines offer the advantage of being highly comprehensive, often returning thousands of websites in their search results.The disadvantage thusly is having to filter out a large number of irrelevant destinations to find what you are searching for, because, despite the fact that search engines attempt to list sites arranged by significance, this relevance is determined by a mathematical formula that is far from perfect. Search engines are especially helpful while looking for a particular subject that may not be tracked down in a directory. 
+\cite{searchEngines}
+\begin{enumerate}
+\item Search engine - A program that searches documents for specified keywords and returns a list of the documents where the keywords were found, ranked in order of relevance. It allows one to ask for content meeting specific criteria (typically those containing a given word or phrase) and retrieves a list of references that match those criteria
+\item Directory - A manual catalogue of sites on the Internet. People create categories and assign sites to a place within a structured index. An example of a typical directory is Yahoo, which screens all relevant information and assigns this information to an address. Yahoo also orders sites so that the most relevant or comprehensive in each category appears first on the list. This search feature can help people quickly find targeted information on more general topics.
+\item Crawler/Spider - Visits webpages following links, updating pages and adding new pages when it comes across them.
+\item Index/Catalogue - Where a spider’s collected data is stored i.e. it contains a copy of every webpage that the spider finds.
+\item Query - The keyword or question entered by the user requesting the search engine to search for. 
+\item Response time - The period between issuing a search query and the display of the first search results.
+\item Precision - The relevance of a search result to a search query.
+\end{enumerate}
 
 
 
 
-\subsection{Email mining} \label{email mining}
-
-
-
-
-\section{Záver} \label{zaver} % prípadne iný variant názvu
+\section{Conclution} \label{zaver} % prípadne iný variant názvu
 
 
 
@@ -154,9 +168,7 @@ The first email sent across the network was sent by Ray Tomlinson, initiated the
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
 \bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \bibliography{literatura}
-https://dl.acm.org/doi/10.1145/3437963.3441653
 
-https://citeseerx.ist.psu.edu/pdf/517aab5b3a7b1e207c44ff05b9ae47620ce181e7
 
 
 \end{document}
